@@ -1,0 +1,20 @@
+int add(int a, int b) {
+ return a + b;
+}
+
+void checkElif(int a, int b) {
+  if (a == b) {
+     return;
+  }
+  elif (a > b) {
+     return;
+  }
+  else {
+     return;
+  };
+}
+
+int main () {
+  printString("hello world") ;
+  return 0 ;
+}
