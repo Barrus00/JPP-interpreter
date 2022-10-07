@@ -1,0 +1,31 @@
+(int y) => int fun(int x) {
+  int pow(int x, int y) {
+    int res = 1;
+
+    for(int i = 0; i < y; i++;) {
+      res = res * x;
+    }
+
+    return res;
+  }
+
+  return [int y] (int) {
+    return pow(x, y);
+  };
+}
+
+int main() {
+  int x = 5;
+  int y = 3;
+
+  (int y) => int pow5 = fun(5);
+
+  if (pow5 :: (3) == 125) {
+    print (pow5 :: (5));
+    // This should be executed, as the pow5 function should calculate
+    // the power of 5.
+    return 0;
+  }
+
+  return 0/0;
+}

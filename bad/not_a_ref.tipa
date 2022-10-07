@@ -1,0 +1,13 @@
+int foo(int ref x) {
+  x = 15;
+
+  return x / 2;
+}
+
+int main() {
+  print "Calling foo with lvalue...";
+
+  foo(5);
+
+  return 0;
+}

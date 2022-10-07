@@ -1,0 +1,16 @@
+int foo(int ref x) {
+  x = 15;
+
+  return x / 2;
+}
+
+int main() {
+  int x = 0;
+  print "In main: x =", x;
+
+  print "Foo call returned:", foo(x);
+
+  print "Now in main: x =", x;
+
+  return 0;
+}

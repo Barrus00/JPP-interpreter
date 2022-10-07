@@ -1,0 +1,19 @@
+() => void foo () {
+  string h = "hello";
+
+  void bar() {
+    print h;  // Thanks to the closure mechanic, the variable h, is still accessible
+              // by calling bar() from the main function, which encloses the environment
+              // and saves declared earlier h variable.
+  }
+
+  return bar;
+}
+
+int main() {
+  () => void fun = foo();
+
+  fun(); // This will print : "hello".
+
+  return 0;
+}

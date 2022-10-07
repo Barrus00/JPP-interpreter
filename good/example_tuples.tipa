@@ -1,0 +1,29 @@
+tuple<int, tuple<int, int>> generate_fibbonacci(int k) {
+    int x = 0;
+    int y = 1;
+
+    int i = 0;
+
+    while (y < k) {
+        y = y + x;
+        x = y - x;
+
+        i++;
+    }
+
+    return <|i, <|x, y|>|>;
+}
+
+int main() {
+    int k;
+    tuple<int, int> t;
+    int t1, t2;
+    [k, t] = generate_fibbonacci(7);
+    [t1, t2] = t;
+
+    print "Number 7 lies between two fibonacci numbers: ";
+    print t1, "and", t2;
+    print "This number is bigger than", k, "Fibonacci numbers!";
+
+    return 0;
+}

@@ -1,0 +1,30 @@
+void print_modulo(int ref k) {
+  k = k + 1;
+  while(true) {
+    if (k % 3 == 0) {
+        print "DIVISIBLE BY 3... IGNORING";
+        k++;
+    }
+    elif (k % 8 == 0) {
+        print "DIVISIBLE BY 8... IGNORING";
+        k++;
+    }
+    else {
+        break;
+    }
+  }
+}
+
+int main() {
+  // After each iteration, the print_modulo function will be called,
+  // and it will change the i value by reference, and skip these values
+  // that are divisible by 3 or 8.
+  print "START";
+  for(int i = 0; i < 23; print_modulo(i);) {
+      // Do something interesting with the i variable.
+      print i;
+      i = i + i / 2;
+  }
+
+  return 0;
+}

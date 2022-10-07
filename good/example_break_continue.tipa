@@ -1,0 +1,24 @@
+int main() {
+  print "Printing all even numbers lower than 21";
+
+  for (int i = 0; i < 21; i++;) {
+      if (i % 2 == 0) {
+        print i;
+      }
+  }
+
+  print "Printing all the powers of 2, lower than 2314";
+  int x = 1;
+  
+  while (true) {
+    print x;
+
+    x = 2 * x;
+
+    if (x >= 2314) {
+      break;
+    }
+  }
+
+  return 0;
+}

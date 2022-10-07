@@ -1,0 +1,19 @@
+int fun(bool b) {
+  if (b) {
+    print "First call with return.";
+    return 1;
+  }
+  else {
+    print "Second call without a return.";
+  }
+}
+
+int main() {
+  fun(true);
+  print "OK";
+  fun(false);
+
+  print "Whoops, something went wrong.";
+
+  return 0;
+}

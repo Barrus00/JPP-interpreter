@@ -1,0 +1,7 @@
+int foo() {
+  return 57;
+}
+
+int main() {
+  return foo(56);
+}

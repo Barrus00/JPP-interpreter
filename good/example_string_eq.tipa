@@ -1,0 +1,21 @@
+int main() {
+  string x = "hello", y = "world";
+  print "String1 :", x;
+  print "String2 :", y;
+
+  if (x == y) {
+    print "Are equal?!";
+  }
+  elif (x != y) {
+    print "Are not equal!";
+
+    if (x == "hello") {
+      print "But x is equal to \"hello\"";
+    }
+  }
+  else {
+    print "Weiird.";
+  }
+
+  return 0;
+}

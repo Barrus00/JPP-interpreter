@@ -1,0 +1,11 @@
+int main() {
+  int x = 0;
+  {
+    string x = "Different block, declaration works.";
+
+    print x;
+  }
+  string x;
+
+  return 0;
+}

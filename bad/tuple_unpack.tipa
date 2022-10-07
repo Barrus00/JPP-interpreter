@@ -1,0 +1,6 @@
+int main() {
+    int x;
+    string y;
+
+    [x, y] = <|"15", 2|>;
+}

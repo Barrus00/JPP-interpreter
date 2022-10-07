@@ -1,0 +1,18 @@
+int foo((int x, int y) => int f, int x, int y) {
+  return f(x, y);
+}
+
+int main() {
+  int sum(int x, bool y) {
+    return x;
+  }
+  int div(int x, int y) {
+    return x / y;
+  }
+  int x = 18;
+  int y = 9;
+  print x, "+", y, "=", foo(sum, x, y);
+  print x, "/", y, "=", foo(div, x, y);
+
+  return 0;
+}
